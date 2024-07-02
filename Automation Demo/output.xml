@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.11.3 on win32)" generated="2024-06-27T20:33:08.196347" rpa="false" schemaversion="5">
+<suite id="s1" name="Test123" source="e:\Demo Project 1\Automation Demo\Tests\Product Page\Test123.robot">
+<kw name="Set Product Config" type="SETUP">
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Set Suite Variable" owner="BuiltIn">
+<msg time="2024-06-27T20:33:08.223379" level="INFO">${Api_Product_Config} = Department</msg>
+<arg>${Api_Product_Config}</arg>
+<arg>Department</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<status status="PASS" start="2024-06-27T20:33:08.223379" elapsed="0.002011"/>
+</kw>
+<arg>'${PRODUCT_CONFIG}' == 'Corporate'</arg>
+<arg>Set Suite Variable</arg>
+<arg>${Api_Product_Config}</arg>
+<arg>Department</arg>
+<arg>ELSE IF</arg>
+<arg>'${PRODUCT_CONFIG}' == 'Staffing'</arg>
+<arg>Set Suite Variable</arg>
+<arg>${Api_Product_Config}</arg>
+<arg>Client</arg>
+<arg>ELSE</arg>
+<arg>Set Suite Variable</arg>
+<arg>${Api_Product_Config}</arg>
+<arg>${DEFAULT_CONFIG}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-06-27T20:33:08.222384" elapsed="0.004076"/>
+</kw>
+<status status="PASS" start="2024-06-27T20:33:08.222384" elapsed="0.004076"/>
+</kw>
+<test id="s1-t1" name="Example Test Case 1" line="9">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${Api_Product_Config}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-06-27T20:33:08.227458" elapsed="0.000996"/>
+</kw>
+<status status="PASS" start="2024-06-27T20:33:08.226460" elapsed="0.002859"/>
+</test>
+<status status="PASS" start="2024-06-27T20:33:08.200324" elapsed="0.029989"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Test123">Test123</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

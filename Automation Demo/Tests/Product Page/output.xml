@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.11.3 on win32)" generated="2024-06-30T02:12:56.592806" rpa="false" schemaversion="5">
+<suite id="s1" name="Test123" source="E:\Demo Project 1\Automation Demo\Tests\Product Page\Test123.robot">
+<kw name="Check Condition" type="SETUP">
+<kw name="Run Keyword And Continue On Failure" owner="BuiltIn">
+<kw name="Control Test Case">
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Set Suite Variable" owner="BuiltIn">
+<msg time="2024-06-30T02:12:56.620916" level="INFO">${CONDITION_MET} = True</msg>
+<arg>${CONDITION_MET}</arg>
+<arg>True</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<status status="PASS" start="2024-06-30T02:12:56.620916" elapsed="0.000000"/>
+</kw>
+<arg>'${PRODUCT_CONFIG}' == 'Corporate'</arg>
+<arg>Set Suite Variable</arg>
+<arg>${CONDITION_MET}</arg>
+<arg>True</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-06-30T02:12:56.619920" elapsed="0.000996"/>
+</kw>
+<doc>This test case checks if the condition is met.</doc>
+<status status="PASS" start="2024-06-30T02:12:56.619920" elapsed="0.000996"/>
+</kw>
+<arg>Control Test Case</arg>
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<status status="PASS" start="2024-06-30T02:12:56.619920" elapsed="0.000996"/>
+</kw>
+<status status="PASS" start="2024-06-30T02:12:56.619920" elapsed="0.000996"/>
+</kw>
+<test id="s1-t1" name="Example Test Case 1" line="13">
+<kw name="Check Run Condition" type="SETUP">
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>'${CONDITION_MET}' == 'False'</arg>
+<arg>Skip</arg>
+<arg>Condition not met, skipping test cases.</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-06-30T02:12:56.621914" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-06-30T02:12:56.621914" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Example Test Case 1 is running.</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-06-30T02:12:56.622896" elapsed="0.000470"/>
+</kw>
+<tag>RunIfConditionMet</tag>
+<status status="PASS" start="2024-06-30T02:12:56.620916" elapsed="0.002877"/>
+</test>
+<test id="s1-t2" name="Example Test Case 2" line="17">
+<kw name="Check Run Condition" type="SETUP">
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>'${CONDITION_MET}' == 'False'</arg>
+<arg>Skip</arg>
+<arg>Condition not met, skipping test cases.</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-06-30T02:12:56.625426" elapsed="0.001279"/>
+</kw>
+<status status="PASS" start="2024-06-30T02:12:56.625426" elapsed="0.001279"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Example Test Case 2 is running.</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-06-30T02:12:56.626705" elapsed="0.000913"/>
+</kw>
+<tag>RunIfConditionMet</tag>
+<status status="PASS" start="2024-06-30T02:12:56.625426" elapsed="0.002192"/>
+</test>
+<test id="s1-t3" name="Example Test Case 3" line="21">
+<kw name="Check Run Condition" type="SETUP">
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>'${CONDITION_MET}' == 'False'</arg>
+<arg>Skip</arg>
+<arg>Condition not met, skipping test cases.</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-06-30T02:12:56.630605" elapsed="0.000440"/>
+</kw>
+<status status="PASS" start="2024-06-30T02:12:56.629610" elapsed="0.001549"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Example Test Case 3 is running.</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-06-30T02:12:56.631657" elapsed="0.000000"/>
+</kw>
+<tag>RunIfConditionMet</tag>
+<status status="PASS" start="2024-06-30T02:12:56.629610" elapsed="0.002047"/>
+</test>
+<status status="PASS" start="2024-06-30T02:12:56.594583" elapsed="0.040303"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="3" fail="0" skip="0">RunIfConditionMet</stat>
+</tag>
+<suite>
+<stat pass="3" fail="0" skip="0" id="s1" name="Test123">Test123</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
